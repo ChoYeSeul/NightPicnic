@@ -1,0 +1,1311 @@
+html,body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* background-size: 800% 800%; */
+    /* animation : backgroundG 15s ease infinite; */
+}
+
+
+/* 처음 시작 버튼 */
+.audioButton{
+	width:40px;
+	height: 40px;
+	color:#000203;
+	background: #1EFF96;
+	font-size: 16px;
+	border:none;
+	border-radius: 120px;
+	box-shadow: 0 4px 16px #99dabb;
+	transition:0.3s;
+	position: absolute;
+	top: 40%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 999;
+    animation: startCircle 2s linear infinite alternate;
+}
+.audioButton:focus {
+	outline:0;
+}
+.audioButton:hover{
+	background:#000000;
+	cursor: pointer;
+    box-shadow: 0 2px 4px #585a59;
+    width: 40px;
+    height: 40px;
+}
+
+/* 원을 클릭하세요 */
+/* .testText{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
+    font-size: 14px;
+    font-weight: 300;
+} */
+/* 시작 원 */
+.startCircle{
+    background-color:#000203;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,0);
+    animation: startCircle 2s linear infinite alternate;
+    /* animation: startCircleScale 1s linear forwards alternate; */
+}
+/* one line */
+.oneline{
+    background-color: #000000;
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 999;
+}
+/* Myname - 내 이름 */
+.Myname{
+    font-size: 14px;
+    position: absolute;
+    left: 5%;
+    /* top: 43%; */
+    bottom: 10%;
+}
+/* Subject - 제목 */
+.Subject0{
+    font-size: 12px;
+    font-weight: lighter;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    opacity: 0;
+}
+.Subject{
+    font-size: 120px;
+    position: absolute;
+    font-weight: 800;
+    width: 1200px;
+    top: 60%;
+    /* bottom: 10%; */
+    left: 60%;
+    transform: translate(-50%, -50%);
+    /* transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1); */
+    animation: Layer_2 0.28s linear forwards ;
+    color: rgb(223, 223, 223);
+}
+.subject1{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.subject1 > ul{
+    list-style: none;
+}
+.subject1 > ul > li{
+    padding-bottom: 5px;
+}
+.subject2{
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    font-size: 12px;
+    font-weight: lighter;
+}
+/* 화살표 - 없어도 될듯?*/
+/* .line_right{
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+    transform: rotate(1215deg);
+    display: inline-block;
+    position: absolute;
+    top: 47%;
+    right: 5%;
+    z-index: 99999;
+} */
+/* shine svg */
+ #Layer_2{
+     display: none;
+     transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+     /* 싱크 맞추기 개꿀잼이네 오호호 */
+     /* animation: Layer_2 0.28s linear forwards ; */
+     top: 40%;
+     left: 49.7%;
+     position: absolute;
+     /* transform: translate(-50%, -50%); */
+     transform: translate(-10%,-20%) scale(1.2);
+     /* transform: scale(1.4); */
+ }
+.st41{
+    fill:none;
+    stroke:#FFA1ED;
+    stroke-width:6;
+    stroke-miterlimit:10;
+    stroke-dashoffset: 1000;
+    /* animation: dash 1s linear alternate forwards; */
+    stroke-dasharray: 1000;
+}
+.st42{
+    fill:none;
+    stroke:#000203;
+    stroke-width:6;
+    stroke-miterlimit:10;
+    stroke-dashoffset: 1000;
+    /* animation: dash 1s linear alternate forwards; */
+    stroke-dasharray: 1000;
+}
+.st43{
+    fill:none;
+    stroke:#FFDF22;
+    stroke-width:6;
+    stroke-miterlimit:10;
+    stroke-dashoffset: 1000;
+    /* animation: dash 1s linear alternate forwards; */
+    stroke-dasharray: 1000;
+}
+.st44{
+    fill:none;
+    stroke:#27C2FF;
+    stroke-width:6;
+    stroke-miterlimit:10;
+    stroke-dashoffset: 1000;
+    /* animation: dash 1s linear alternate forwards; */
+    stroke-dasharray: 1000;
+}
+.st45{
+    fill:none;
+    stroke:#E533FF;
+    stroke-width:6;
+    stroke-miterlimit:10;
+    stroke-dashoffset: 1000;
+    /* animation: dash 1s linear alternate forwards; */
+    stroke-dasharray: 1000;
+}
+.st46{
+    fill:none;
+    stroke:#FF6131;
+    stroke-width:6;
+    stroke-miterlimit:10;
+    stroke-dashoffset: 1000;
+    /* animation: dash 1s linear alternate forwards; */
+    stroke-dasharray: 1000;
+}
+.st47{
+    fill:none;
+    stroke:#FFA31D;
+    stroke-width:6;
+    stroke-miterlimit:10;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    /* animation: dash 1s linear alternate forwards; */
+}
+.st48{
+    fill:none;
+    stroke:#B72EFF;
+    stroke-width:6;
+    stroke-miterlimit:10;
+    stroke-dashoffset: 1000;
+    /* animation: dash 1s linear alternate forwards; */
+    stroke-dasharray: 1000;
+}
+
+/* 눈 깜빡하기 위한 css! - 애니메이션 응용 */
+#wrap{
+    display: none;
+    top: 38%;
+    left: 48.6%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.animation{
+    width:400px;
+    height:337.2px;
+    margin:20px;
+    background-repeat:no-repeat;
+    background-position:0 0
+}
+.eye2{
+    background-image:url(../assets/img/eye.png);
+    background-size:1728px 1296px
+}
+.util{
+   /* display: none; */
+   opacity: 0;
+}
+
+/* 눈 깜빡하기 위한 css! - 애니메이션 응용, 한번 더 사용 */
+#wrap3{
+    display: none;
+    top: 10%;
+    right: 10%;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+}
+.animation{
+    width:400px;
+    height:337.2px;
+    margin:20px;
+    background-repeat:no-repeat;
+    background-position:0 0
+}
+.eye3{
+    background-image:url(../assets/img/eye.png);
+    background-size:1728px 1296px
+}
+
+/* 움직이는 원 */
+.MoveCircle {
+    top:20%;
+    left:30%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    /* margin: -25px; */
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    background-color: white;
+    z-index: 2000;
+    display: none;
+
+    animation: 3s bordertl linear infinite,
+      4s border1 linear infinite,
+      5.6s border3 linear infinite,
+      3.3s border1 linear infinite,
+      3s rotate linear infinite,
+      2s hover ease-in-out infinite;
+  }
+  .MoveCircle2 {
+    top:10%;
+    left:47%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* margin: -25px; */
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    z-index: 2000;
+    display: none;
+
+    animation: 3s bordertl linear infinite,
+      4s border3 linear infinite,
+      5.6s border1 linear infinite,
+      3.3s border3 linear infinite,
+      3s rotate linear infinite,
+      2s hover ease-in-out infinite;
+  }
+  .MoveCircle3 {
+    top:23%;
+    left:79%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    /* margin: -25px; */
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    background-color: white;
+    z-index: 2000;
+    display: none;
+
+    animation: 3s bordertl linear infinite,
+      4s border1 linear infinite,
+      5.6s border3 linear infinite,
+      3.3s border2 linear infinite,
+      3s rotate linear infinite,
+      2s hover ease-in-out infinite;
+  }
+  .MoveCircle4 {
+    top:83%;
+    left:60%;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    /* margin: -25px; */
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    background-color: white;
+    z-index: 2000;
+    display: none;
+
+    animation: 3s bordertl linear infinite,
+      4s border1 linear infinite,
+      5.6s border2 linear infinite,
+      3.3s border3 linear infinite,
+      3s rotate linear infinite,
+      2s hover ease-in-out infinite;
+  }
+  .MoveCircle5 {
+    top:50%;
+    left:17%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* margin: -25px; */
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    z-index: 2000;
+    display: none;
+
+    animation: 3s bordertl linear infinite,
+      4s border1 linear infinite,
+      5.6s border3 linear infinite,
+      3.3s border2 linear infinite,
+      3s rotate linear infinite,
+      2s hover ease-in-out infinite;
+  }
+  .MoveCircle6 {
+    top:20%;
+    left:-2%;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    /* margin: -25px; */
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    z-index: 2000;
+    display: none;
+
+    animation: 3s bordertl linear infinite,
+      4s border1 linear infinite,
+      5.6s border3 linear infinite,
+      3.3s border2 linear infinite,
+      3s rotate linear infinite,
+      2s hover ease-in-out infinite;
+  }
+  .MoveCircle7 {
+    top:60%;
+    right:-2%;
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    /* margin: -25px; */
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    z-index: 2000;
+    display: none;
+
+    animation: 3s bordertl linear infinite,
+      4s border1 linear infinite,
+      5.6s border3 linear infinite,
+      3.3s border2 linear infinite,
+      3s rotate linear infinite,
+      2s hover ease-in-out infinite;
+  }
+
+  /* MoveCircle Animation */
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes border1 {
+    0%, 100% {
+      border-top-left-radius: 100px;
+    }
+    
+    25% {
+      border-top-left-radius: 90px;
+    }
+    
+    50% {
+      border-top-left-radius: 80px;
+    }
+    
+    75% {
+      border-top-left-radius: 70px;
+    }
+  }
+  
+  @keyframes border2 {
+    0%, 100% {
+      border-top-right-radius: 100px;
+    }
+    
+    25% {
+      border-top-right-radius: 50px;
+    }
+    
+    50% {
+      border-top-right-radius: 100px;
+    }
+    
+    75% {
+      border-top-right-radius: 70px;
+    }
+  }
+  
+  @keyframes border3 {
+    0%, 100% {
+      border-bottom-right-radius: 100px;
+    }
+    
+    25% {
+      border-bottom-right-radius: 70px;
+    }
+    
+    50% {
+      border-bottom-right-radius: 80px;
+    }
+    
+    75% {
+      border-bottom-right-radius: 90px;
+    }
+  }
+  
+  @keyframes borderbl {
+    0%, 100% {
+      border-bottom-left-radius: 100px;
+    }
+    
+    25% {
+      border-bottom-left-radius: 90px;
+    }
+    
+    50% {
+      border-bottom-left-radius: 80px;
+    }
+    
+    75% {
+      border-bottom-left-radius: 70px;
+    }
+  }
+
+
+/* section1 */
+
+/* 얘 건들지마!!!!! */
+#section1 > ul{
+    list-style: none;
+}
+.circle1{
+    display: none;
+    border-radius: 50%;
+    height: 76px;
+    width: 76px;
+    background-color: rgb(255, 49, 49);
+    position: absolute;
+    top: 372px;
+    left: 47.5%;
+    /* opacity: ; */
+    animation: circleOpacity linear 1s forwards;
+
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* animation: circle1Move linear 0.7s forwards 2s; */
+}
+.circle2{
+    display: none;
+    border-radius: 50%;
+    height: 76px;
+    width: 76px;
+    background-color: rgb(255, 207, 47);
+    position: absolute;
+    top: 372px;
+    left: 47.5%;
+    animation: circleOpacity linear 2s forwards;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* animation: circle2Move linear 0.7s forwards 2s; */
+}
+.circle3{
+    display: none;
+    border-radius: 50%;
+    height: 76px;
+    width: 76px;
+    background-color: rgb(3, 139, 44);
+    position: absolute;
+    top: 372px;
+    left: 47.5%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 2.5s forwards;
+}
+.circle4{
+    display: none;
+    border-radius: 50%;
+    height: 76px;
+    width: 76px;
+    background-color: rgb(64, 194, 255);
+    position: absolute;
+    top: 372px;
+    left: 47.5%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3s forwards;
+    /* animation: circle4Move linear 0.7s forwards 2s; */
+}
+.circle5{
+    display: none;
+    border-radius: 50%;
+    height: 76px;
+    width: 76px;
+    background-color: rgb(82, 35, 255);
+    position: absolute;
+    top: 372px;
+    left: 47.5%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+
+
+/* circle 6-10 */
+.circle6{
+    display: none;
+    display: none;
+    /* opacity: 0%; */
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(146, 146, 146);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+.circle7{
+
+    display: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(65, 65, 65);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+.circle8{
+    /* opacity: 0%; */
+    display: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(65, 65, 65);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+.circle9{
+    /* opacity: 0%; */
+    display: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(133, 133, 133);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+.circle10{
+    display: none;
+    /* display: none; */
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(66, 66, 66);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+
+/* 11-15 */
+.circle11{
+    display: none;
+    /* opacity: 0%; */
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(82, 82, 82);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+.circle12{
+    display: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(82, 82, 82);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+.circle13{
+    /* opacity: 0%; */
+    display: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+.circle14{
+    /* opacity: 0%; */
+    display: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(126, 126, 126);
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+.circle15{
+    display: none;
+    /* display: none; */
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* 이게 있으면 좀 더 부드럽게 애니메이션 가능! */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: circleOpacity linear 3.5s forwards;
+    /* animation: circle5Move linear 0.7s forwards 2s; */
+}
+
+
+/* 움직이는 원 - 첫장면에 쓰일 거지만 여기저기 쓰일 확률 높음 */
+
+.loader{
+    /* 백그라운드 컬러를 줘야될듯,, */
+    /* background-color: #1EFF96; */
+    display: none;
+    position: absolute;
+    /* display: flex; */
+    padding: 100px;
+    align-items: center;
+    background:white;
+    top: 16%;
+    left: 40%;
+    /* transform: translate(-50%, -50%); */
+    /* animation: rotate 20s linear infinite; */
+    /* 이게 진짜 꿀팀임 이거 알아내느라 힘들었다^*^ */
+    animation: Layer_2 0.5s ease-in forwards;
+    filter: blur(10px) contrast(100); 
+}
+
+
+/* 전체적 원에 대한 설정 */
+.particle{
+    background-color: #000000;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+/* 첫, 마지막 원들의 크기는 다르게 설정 - 2배 작게 */
+.particle:first-child,
+.particle:last-child{
+    width: 25px;
+    height: 25px;
+}
+
+/* 홀수 애들한테 스케일을 준다. */
+.particle:nth-child(1),
+.particle:nth-child(3),
+.particle:nth-child(5){
+    animation: ParticleScale 1.3s ease-in-out infinite ;
+}
+@keyframes ParticleScale{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.9)}
+    70%{transform: scale(0.6)}
+    100%{transform: scale(1)}
+}
+
+/* left */
+.leftSpin{
+    animation: leftSpin 2.5s linear infinite;
+}
+ @keyframes leftSpin{
+     from{
+         transform: rotate(0deg) translateX(50px);
+     }to{
+         transform: rotate(360deg) translateX(50px);
+     }
+ }
+/* right */
+ .rightSpin{
+    animation: rightSpin 2s linear infinite;
+}
+ @keyframes rightSpin{
+     from{
+         transform: rotate(360deg) translateX(50px);
+     }to{
+         transform: rotate(0deg) translateX(50px);
+     }
+ }
+/* 3, 5번째 딜레이 - 좀 더 자연스러운 재미 */
+ .particle:nth-child(3){
+     animation-delay: 0.25s;
+ }
+ .particle:nth-child(5){
+     animation-delay: 0.75s;
+ }
+
+ /* rainbow */
+
+ .Rainbow{
+     position: absolute;
+     z-index: -20;
+     left: 20%;
+     top: 43.8%;
+     display: none;
+    margin: 10px 0px;
+    width: 10%;
+    /* height: 100px; */
+    transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .Rainbow > div:nth-child(1){
+    height: 20px;
+    background-color: rgb(255, 49, 49);
+ }
+ .Rainbow > div:nth-child(2){
+    height: 20px;
+    background-color: rgb(255, 207, 47);
+ }
+ .Rainbow > div:nth-child(3){
+    height: 20px;
+    background-color:rgb(3, 139, 44);
+ }
+ .Rainbow > div:nth-child(4){
+    height: 20px;
+    background-color: rgb(64, 194, 255);
+ }
+ .Rainbow > div:nth-child(5){
+    height: 20px;
+    background-color:  rgb(82, 35, 255);
+ }
+
+
+ /* 통통 튀는 원 */
+
+.bounceInUp{
+    transform: translateX(400px); 
+    animation: bounceInUp 1s alternate forwards; 
+}
+@keyframes bounceInUp { 
+    0% { 
+        transform: translateY(0px); 
+    } 
+    30% { 
+        transform: translateY(-40px); 
+        
+    } 
+    100% { 
+        transform: translateY(1100px); 
+    } 
+
+} 
+
+/* loader를 위한 통통 튀는 원 */
+.bounceInUp2{
+    /* transform: translateX(400px);  */
+    animation: bounceInUp2 1s alternate forwards; 
+}
+@keyframes bounceInUp2 { 
+    0% { 
+        transform: translateY(0px); 
+    } 
+    30% { 
+        transform: translateY(-40px); 
+        
+    } 
+    100% { 
+        transform: translateY(1100px); 
+    } 
+
+} 
+
+/* line 1,2 그어지기 위한 작업! */
+
+/* 위 선 */
+.line1{
+    display: none;
+    width: 0%;
+    height: 30px;
+    background-color: #1EFF96;
+    position: absolute;
+    top: 32%;
+    z-index: -10;
+    left: 0;
+}
+/* 아래 선 */
+.line2{
+    display: none;
+    width: 0%;
+    height: 30px;
+    background-color: #1EFF96;
+    position: absolute;
+    top: 60%;
+    z-index: -10;
+    right: 0;
+}
+
+/* 본격적으로 움직일 친구들 */
+
+.st0{fill:#1EFF96;}
+svg{
+    display: none;
+}
+
+
+/* footer */
+footer{
+    /* display: none; */
+    position: absolute;
+    bottom: 10%;
+    font-size: 12px;
+    left: 5%;
+    color: #707070;
+    /* position: absolute; */
+    /* bottom: 34%;
+    left: 30%;
+    color: black;
+    font-weight: 600;
+    /* width: 330px; */
+    /* text-align: center;  */
+}
+footer > ul {
+    /* display: none; */
+    list-style: none;
+    font-size: 14px;
+}
+footer > ul > li:nth-child(1){
+    padding-bottom: 5px;
+}
+
+/* 가사 */
+#ly{
+    position: absolute;
+    bottom: 10%;
+    font-size: 14px;
+    right: 5%;
+    /* width: 270px; */
+    color: #707070;
+}
+
+/* animation */
+
+@keyframes circleOpacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes circle1Move{
+    from{
+        top: 40%;
+    }
+    to{
+        top: 50%;
+    }
+}
+@keyframes circle2Move{
+    from{
+        top: 45%;
+    }
+    to{
+        top: 50%;
+    }
+}
+@keyframes circle4Move{
+    from{
+        top: 55%;
+    }
+    to{
+        top: 50%;
+    }
+}
+@keyframes circle5Move{
+    from{
+        top: 60%;
+    }
+    to{
+        top: 50%;
+    }
+}
+@keyframes circleScale{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes startCircle{
+    from{
+        top: 39%;
+    }
+    to{
+        top: 40%;
+    }
+}
+@keyframes Layer_2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes startCircleScale{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.9);
+    }
+}
+@keyframes startCircleS2{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(100);
+    }
+}
+@keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    50%{
+        stroke-dashoffset: 500;
+    }
+    100%{
+        stroke-dashoffset: 1000;
+    }
+  }
+  @keyframes dashOff{
+      from{
+          opacity: 1;
+      }
+      to{
+          opacity: 0;
+      }
+  }
+  @keyframes backgroundG{
+    0%{
+        background-position:0% 50%;
+    } 
+    50%{
+        background-position:100% 50%;
+    } 
+    100%{
+        background-position:0% 50%;
+    }
+  }
+
+
+  /* 파동 만들기 */
+
+  .wave {
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    border: 3px solid#1EFF96;
+    width: 300px;
+    height: 300px;
+    -webkit-transform-origin: 50% 48%;
+            transform-origin: 50% 48%;
+    border-radius: 42%;
+    animation: WaveMove 600ms linear forwards;
+  }
+  .wave.-two {
+    display: none;
+    animation: WaveMove 1400ms linear forwards;
+    border: 3px solid #a1ffd3;
+  }
+  .wave.-three {
+    display: none;
+    border: 4px solid #a1ffd3;
+    animation: WaveMove 1000ms linear forwards;
+  }
+
+  /* 두번째 wave */
+  .wave2 {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    border: 3px solid#1EFF96;
+    width: 300px;
+    height: 300px;
+    -webkit-transform-origin: 50% 48%;
+            transform-origin: 50% 48%;
+    border-radius: 42%;
+    animation: WaveMove 600ms linear forwards;
+  }
+  .wave2.-two {
+    display: none;
+    animation: WaveMove 1400ms linear forwards;
+    border: 3px solid #a1ffd3;
+  }
+  .wave2.-three {
+    display: none;
+    border: 4px solid #a1ffd3;
+    animation: WaveMove 1000ms linear forwards;
+  }
+
+  /* ㅅㅔㅂㅓㄴㅉㅐ wave */
+  .wave3 {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    border: 4px solid#1EFF96;
+    width: 300px;
+    height: 300px;
+    -webkit-transform-origin: 50% 48%;
+            transform-origin: 50% 48%;
+    border-radius: 42%;
+    animation: WaveMove 600ms linear forwards;
+  }
+  .wave3.-two {
+    display: none;
+    animation: WaveMove 1400ms linear forwards;
+    border: 4px solid #a1ffd3;
+  }
+  .wave3.-three {
+    display: none;
+    border: 4px solid #a1ffd3;
+    animation: WaveMove 1000ms linear forwards;
+  }
+
+/* 애니메이션 */
+  @keyframes WaveMove {
+    from {
+              transform: rotate(0deg) scale(0,0);
+              opacity: 1;
+              border: 4px solid#1EFF96;
+    }
+    to {
+              transform: rotate(360deg) scale(1.3,1.3);
+              opacity: 0;
+              border: 4px solid white;
+    }
+  }
+
+  /* 별 돌아가는 애니메이션 */
+
+  @keyframes s1{
+      0%{
+          transform: rotate(0deg);
+          fill: #1EFF96;
+      }
+      100%{
+        transform: rotate(180deg);
+        fill: white;
+      }
+  }
+
+  /* 마지막 씬을 위한 별 돌아가는 애니메이션 */
+  @keyframes starRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+  @keyframes backgroundColor{
+    0%{
+        background-color: white;
+    }
+    100%{
+      background-color: #1EFF96;
+    }
+}
+@keyframes backgroundColor2{
+    0%{
+        background-color: #1EFF96;
+    }
+    100%{
+      background-color:#1f2354;
+    }
+}
+@keyframes backgroundColor3{
+    0%{
+        background-color:#1f2354;
+    }
+    100%{
+      background-color: #cd00ff;
+    }
+}
+
+/* 무지개 싱크를 위해 애니메이션으로 도전해본다. */
+
+/* 무지개를 위한, */
+@keyframes rainbow1{
+    0%{
+        width : 0px;
+    }
+    100%{
+        width : 63%;
+    }
+}
+/* circle1을 위한, */
+@keyframes rainbow2{
+    0%{
+       left : 20%;
+    }
+    100%{
+        left: 80%;
+    }
+}
+ 
+/* section2_2 */
+#section2_2{
+    display: none;
+}
+
+/* 마지막 씬 */
+
+.st0{fill:#1BFE94;}
+.st1{fill:#F7F7F7;}
+.st2{fill:#1EFF96;}
+.st3{fill:#000203;}
+.st4{font-family:'Helvetica-Bold';}
+.st5{font-size:57.0114px;}
+.st6{font-size:27.3912px;}
+.st7{font-family:'AdobeMyungjoStd-Medium-KSCpc-EUC-H'; fill:white;}
+.st9{font-size:244.7818px;}
+
+#last{
+    display: none;
+}
+
+#eyes{
+    position: absolute;
+    right: 0;
+}
+.replay{
+    position: absolute;
+    top: 70%;
+}
+.replay:hover{
+    cursor: pointer;
+}
+
+@keyframes bar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+/* .loopText{
+    transform: rotate(-90deg);
+    font-size: 120px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+.loopText2{
+    transform: rotate(-90deg);
+    font-size: 120px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 60%;
+} */
+
+#NightLinnne2{
+    display: none;
+    /* fill: none; */
+    stroke: #000000;
+    stroke-width: 2px;
+    stroke-dasharray: 80;
+    animation: nightline 4s linear infinite;
+}
+#NightLinnne1{
+    display: none;
+    /* fill: none; */
+    stroke: #000000;
+    stroke-width: 2px;
+    stroke-dasharray: 80;
+    animation: nightline 4s linear infinite;
+}
+ @keyframes nightline{
+     0%{
+         fill: none;
+     }
+     100%{
+         stroke-dashoffset: 160;
+         fill: #000000;
+     }
+ }
+
+ #stars2{
+     position: relative;
+     transform: translate(0,-10%);
+ }
